@@ -17,6 +17,7 @@ imgClose = cv2.morphologyEx(imgCanny, cv2.MORPH_CLOSE, (7, 7))
 # Encontra os contornos externos dos objetos na imagem
 contours, hierarchy = cv2.findContours(imgClose, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
+num0b = 1
 # Itera sobre cada contorno encontrado
 for cnt in contours:
     # Encontra a caixa delimitadora do contorno
